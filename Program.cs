@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Практика_1
+namespace Practica
 {
     class Weapon
     {
         string name;
         float caliber;
         double range;
+
+
     }
 }
