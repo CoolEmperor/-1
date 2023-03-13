@@ -11,19 +11,28 @@ namespace Practica
         public string name;
         public float caliber;
         public double range;
+
+        public string Name { get; set; }
+        public float Caliber { get; set; }
+        public double Range { get; set; }
+
+        public Weapon(string name, float caliber, double range)
+        {
+            Name = name;
+            Caliber = caliber;
+            Range = range;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Weapon weapon = new Weapon();
-            weapon.name = " ";
-            weapon.caliber = 2.3f;
-            weapon.range = 1.1d;
+            Weapon weapon = new Weapon("АК-47", 14.2f, 14.1d);
+            
 
-            Console.WriteLine(weapon.name);
-            Console.WriteLine(weapon.caliber);
-            Console.WriteLine(weapon.range);
+            Console.WriteLine(weapon.Name);
+            Console.WriteLine(weapon.Caliber);
+            Console.WriteLine(weapon.Range);
         }
     }
 
