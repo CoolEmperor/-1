@@ -8,9 +8,6 @@ namespace Practica
 {
     class Weapon
     {
-        public string name;
-        public float caliber;
-        public double range;
 
         public string Name { get; set; }
         public float Caliber { get; set; }
